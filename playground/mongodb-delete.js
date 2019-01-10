@@ -23,9 +23,9 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', {useNewUrlParser: true}
     const db = client.db('TodoApp')
 
 //deleteMany
-// db.collection('Todos').deleteMany({text: 'Eat breakfast'}).then((results) => {
-//     console.log(results)
-// })
+db.collection('Todos').deleteMany({text: 'Eat breakfast'}).then((results) => {
+    console.log(results)
+})  
 
 //deleteOne works the same as deleteMany except it deletes the first item it finds that matches then stops.
 
